@@ -1,0 +1,8 @@
+﻿.detail-card { background: #fff; border-radius: 16rpx; padding: 30rpx; }
+.detail-row { display: flex; padding: 20rpx 0; border-bottom: 1rpx solid #eee; }
+.detail-label { width: 150rpx; color: #909399; font-size: 28rpx; }
+.detail-value { flex: 1; font-size: 28rpx; }
+.action-bar { margin-top: 40rpx; display: flex; gap: 20rpx; }
+.action-btn { flex: 1; background: #409EFF; color: #fff; border-radius: 12rpx; padding: 20rpx; text-align: center; font-size: 28rpx; }
+.danger { background: #f56c6c; }
+.green { color: #67c23a; } .orange { color: #e6a23c; } .red { color: #f56c6c; }

@@ -1,0 +1,20 @@
+﻿<view class="container">
+  <view class="search-bar">
+    <input class="search-input" placeholder="搜索食材..." bindinput="onSearch" />
+    <button class="add-btn" bindtap="goAdd">+</button>
+  </view>
+  <view class="list">
+    <view class="item" wx:for="{{list}}" wx:key="id" bindtap="goDetail" data-id="{{item.id}}">
+      <view class="item-info">
+        <text class="item-name">{{item.name}}</text>
+        <text class="item-category">{{item.category?.name || '-'}}</text>
+      </view>
+      <view class="item-stock">
+        <text class="stock-num">{{item.stockQuantity}}{{item.unit}}</text>
+        <view class="status-tag {{item.status === 1 ? 'normal' : item.status === 2 ? 'warning' : 'expired'}}">
+          {{item.status === 1 ? '正常' : item.status === 2 ? '预警' : '过期'}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+﻿.container { padding: 20rpx; }
+.search-bar { display: flex; gap: 20rpx; margin-bottom: 20rpx; }
+.search-input { flex: 1; height: 80rpx; background: #fff; border-radius: 40rpx; padding: 0 30rpx; font-size: 28rpx; }
+.add-btn { width: 80rpx; height: 80rpx; background: #409EFF; color: #fff; border-radius: 50%; line-height: 80rpx; text-align: center; font-size: 40rpx; }
+.item { background: #fff; border-radius: 16rpx; padding: 30rpx; margin-bottom: 20rpx; display: flex; justify-content: space-between; align-items: center; }
+.item-name { font-size: 30rpx; font-weight: bold; display: block; }
+.item-category { font-size: 24rpx; color: #909399; display: block; margin-top: 10rpx; }
+.item-stock { text-align: right; }
+.stock-num { font-size: 28rpx; color: #409EFF; display: block; }
+.status-tag { display: inline-block; padding: 4rpx 16rpx; border-radius: 20rpx; font-size: 22rpx; margin-top: 10rpx; }
+.normal { background: #f0f9eb; color: #67c23a; }
+.warning { background: #fdf6ec; color: #e6a23c; }
+.expired { background: #fef0f0; color: #f56c6c; }

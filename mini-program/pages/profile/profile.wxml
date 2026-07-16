@@ -1,0 +1,15 @@
+﻿<view class="container">
+  <view class="user-card">
+    <view class="avatar">{{initial}}</view>
+    <view class="user-info">
+      <text class="user-name">{{username || '未登录'}}</text>
+      <text class="user-role">{{role === 'ADMIN' ? '管理员' : '普通用户'}}</text>
+    </view>
+  </view>
+  <view class="menu-list">
+    <view class="menu-item" bindtap="goTo" data-url="/pages/report/index">数据报表</view>
+    <view class="menu-item" bindtap="goTo" data-url="/pages/ai/article">文章生成</view>
+    <view class="menu-item" bindtap="goTo" data-url="/pages/ai/image">AI绘图</view>
+  </view>
+  <button class="logout-btn" bindtap="logout">退出登录</button>
+</view>

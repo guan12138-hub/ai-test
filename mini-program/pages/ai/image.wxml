@@ -1,0 +1,8 @@
+﻿<view class="container">
+  <view class="form-group">
+    <text class="label">图片描述</text>
+    <textarea class="textarea" placeholder="输入图片描述..." bindinput="onPromptInput" />
+  </view>
+  <button class="action-btn" bindtap="generate">生成图片</button>
+  <view class="result" wx:if="{{imageUrl}}"><image src="{{imageUrl}}" mode="widthFix" style="width:100%" /></view>
+</view>

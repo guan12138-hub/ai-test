@@ -1,0 +1,14 @@
+﻿<view class="container">
+  <view class="form-group">
+    <text class="label">生成类型</text>
+    <picker mode="selector" range="{{types}}" range-key="label" bindchange="onTypeChange">
+      <view class="picker">{{selectedType}}</view>
+    </picker>
+  </view>
+  <view class="form-group">
+    <text class="label">主题</text>
+    <input class="input" placeholder="请输入主题" bindinput="onTopicInput" />
+  </view>
+  <button class="action-btn" bindtap="generate">生成文章</button>
+  <view class="result" wx:if="{{content}}"><text>{{content}}</text></view>
+</view>

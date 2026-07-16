@@ -1,0 +1,25 @@
+﻿<view class="container">
+  <form bindsubmit="handleSubmit">
+    <view class="form-group">
+      <text class="label">食材名称</text>
+      <input class="input" name="name" placeholder="请输入食材名称" />
+    </view>
+    <view class="form-group">
+      <text class="label">分类</text>
+      <picker mode="selector" range="{{categories}}" range-key="name" bindchange="onCategoryChange">
+        <view class="picker">{{selectedCategory || '请选择分类'}}</view>
+      </picker>
+    </view>
+    <view class="form-group">
+      <text class="label">库存量</text>
+      <input class="input" name="stockQuantity" type="digit" placeholder="0" />
+    </view>
+    <view class="form-group">
+      <text class="label">单位</text>
+      <picker mode="selector" range="{{units}}" bindchange="onUnitChange">
+        <view class="picker">{{selectedUnit || 'kg'}}</view>
+      </picker>
+    </view>
+    <button class="submit-btn" type="primary" form-type="submit">保存</button>
+  </form>
+</view>

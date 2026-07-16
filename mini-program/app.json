@@ -1,0 +1,51 @@
+﻿{
+  "pages": [
+    "pages/index/index",
+    "pages/ingredient/list",
+    "pages/ingredient/add",
+    "pages/ingredient/detail",
+    "pages/ai/chat",
+    "pages/ai/article",
+    "pages/ai/image",
+    "pages/report/index",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#409EFF",
+    "navigationBarTitleText": "AI智能食材管理",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#409EFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_active.png"
+      },
+      {
+        "pagePath": "pages/ingredient/list",
+        "text": "食材",
+        "iconPath": "images/ingredient.png",
+        "selectedIconPath": "images/ingredient_active.png"
+      },
+      {
+        "pagePath": "pages/ai/chat",
+        "text": "AI助手",
+        "iconPath": "images/ai.png",
+        "selectedIconPath": "images/ai_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "images/profile.png",
+        "selectedIconPath": "images/profile_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

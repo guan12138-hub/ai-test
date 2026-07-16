@@ -1,0 +1,12 @@
+﻿.container { padding: 20rpx; }
+.header-section { text-align: center; padding: 40rpx 0; }
+.welcome { font-size: 28rpx; color: #909399; display: block; }
+.title { font-size: 40rpx; font-weight: bold; color: #303133; display: block; margin-top: 10rpx; }
+.stats-grid { display: flex; flex-wrap: wrap; gap: 20rpx; margin: 20rpx 0; }
+.stat-card { flex: 1; min-width: 150rpx; background: #fff; border-radius: 16rpx; padding: 30rpx; text-align: center; box-shadow: 0 2rpx 12rpx rgba(0,0,0,0.06); }
+.stat-value { font-size: 36rpx; font-weight: bold; color: #409EFF; display: block; }
+.stat-label { font-size: 24rpx; color: #909399; margin-top: 10rpx; display: block; }
+.menu-grid { display: flex; flex-wrap: wrap; gap: 20rpx; margin-top: 30rpx; }
+.menu-item { width: calc(25% - 16rpx); background: #fff; border-radius: 16rpx; padding: 30rpx 10rpx; text-align: center; box-shadow: 0 2rpx 12rpx rgba(0,0,0,0.06); }
+.menu-icon { width: 60rpx; height: 60rpx; }
+.menu-label { font-size: 24rpx; color: #303133; margin-top: 10rpx; display: block; }

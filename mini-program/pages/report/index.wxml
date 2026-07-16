@@ -1,0 +1,11 @@
+﻿<view class="container">
+  <view class="section">
+    <text class="section-title">库存概览</text>
+    <view class="stat-row">
+      <view class="stat-item" wx:for="{{stats}}" wx:key="label">
+        <text class="num">{{item.value}}</text>
+        <text class="lbl">{{item.label}}</text>
+      </view>
+    </view>
+  </view>
+</view>

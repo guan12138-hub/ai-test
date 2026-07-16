@@ -1,0 +1,31 @@
+﻿server:
+  port: ${PORT:8080}
+
+spring:
+  datasource:
+    url: ${MYSQL_URL:jdbc:mysql://localhost:3306/ai_ingredient?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&createDatabaseIfNotExist=true}
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PASSWORD:123456}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:AiIngredientSecretKey2024VeryLongSecureKeyForJwtTokenGeneration}
+    expiration: ${JWT_EXPIRATION:86400000}
+  coze:
+    api-key: ${COZE_API_KEY:YOUR_COZE_API_KEY}
+    api-url: ${COZE_API_URL:https://api.coze.cn/v1}
+    bot-id: ${COZE_BOT_ID:YOUR_COZE_BOT_ID}
+  upload:
+    path: ${UPLOAD_PATH:./uploads}

@@ -1,0 +1,18 @@
+﻿<view class="container">
+  <view class="header-section">
+    <text class="welcome">欢迎使用</text>
+    <text class="title">AI智能食材管理系统</text>
+  </view>
+  <view class="stats-grid">
+    <view class="stat-card" wx:for="{{statsCards}}" wx:key="index">
+      <text class="stat-value">{{item.value}}</text>
+      <text class="stat-label">{{item.label}}</text>
+    </view>
+  </view>
+  <view class="menu-grid">
+    <view class="menu-item" wx:for="{{menuList}}" wx:key="index" bindtap="goToPage" data-url="{{item.url}}">
+      <image class="menu-icon" src="{{item.icon}}" />
+      <text class="menu-label">{{item.label}}</text>
+    </view>
+  </view>
+</view>

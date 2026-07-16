@@ -1,0 +1,11 @@
+﻿<view class="chat-container">
+  <scroll-view class="messages" scroll-y>
+    <view class="msg {{item.role === 'user' ? 'user-msg' : 'ai-msg'}}" wx:for="{{messages}}" wx:key="index">
+      <text>{{item.content}}</text>
+    </view>
+  </scroll-view>
+  <view class="input-bar">
+    <input class="msg-input" value="{{query}}" bindinput="onInput" placeholder="输入问题..." />
+    <button class="send-btn" bindtap="sendMessage">发送</button>
+  </view>
+</view>

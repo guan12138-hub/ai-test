@@ -1,0 +1,18 @@
+﻿<view class="container">
+  <view class="detail-card">
+    <view class="detail-row"><text class="detail-label">名称</text><text class="detail-value">{{item.name}}</text></view>
+    <view class="detail-row"><text class="detail-label">分类</text><text class="detail-value">{{item.category?.name || '-'}}</text></view>
+    <view class="detail-row"><text class="detail-label">库存量</text><text class="detail-value">{{item.stockQuantity}} {{item.unit}}</text></view>
+    <view class="detail-row"><text class="detail-label">单价</text><text class="detail-value">{{item.unitPrice}}</text></view>
+    <view class="detail-row"><text class="detail-label">过期日期</text><text class="detail-value">{{item.expiryDate || '-'}}</text></view>
+    <view class="detail-row"><text class="detail-label">状态</text>
+      <text class="detail-value {{item.status === 1 ? 'green' : item.status === 2 ? 'orange' : 'red'}}">
+        {{item.status === 1 ? '正常' : item.status === 2 ? '预警' : '过期'}}
+      </text>
+    </view>
+  </view>
+  <view class="action-bar">
+    <button class="action-btn" bindtap="recordConsume">记录消耗</button>
+    <button class="action-btn danger" bindtap="deleteItem">删除</button>
+  </view>
+</view>

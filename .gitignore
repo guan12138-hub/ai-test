@@ -1,0 +1,34 @@
+﻿# Java
+target/
+*.class
+*.jar
+*.war
+*.log
+.idea/
+*.iml
+.settings/
+.project
+.classpath
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+application-local.yml
+
+# Uploads
+uploads/
+
+# Mini Program
+mini-program/miniprogram_npm/
+mini-program/node_modules/
